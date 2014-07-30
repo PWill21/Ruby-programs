@@ -7,5 +7,9 @@
 
 
 # ask for a beginning year
+puts("What is the starting year?")
+starting_year = gets.chomp
 
 # ask for an ending year
+puts("What is the ending year?")
+ending_year = gets.chomp
