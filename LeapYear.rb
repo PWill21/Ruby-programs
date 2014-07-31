@@ -15,7 +15,10 @@ puts("What is the ending year?")
 ending_year = gets.chomp.to_i
 
 # start loop that iterates from starting year to ending year
-while starting_year < ending_year
-	puts(starting_year)
-	starting_year = starting_year + 1
+year = starting_year
+while year < ending_year
+	if year % 4 == 0
+		puts(year)
+	end
+	year = year + 1
 end
