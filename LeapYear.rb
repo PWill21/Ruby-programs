@@ -16,9 +16,15 @@ ending_year = gets.chomp.to_i
 
 # start loop that iterates from starting year to ending year
 year = starting_year
-while year < ending_year
-	if year % 4 == 0
-		puts(year)
+
+while year < ending_year	
+	leap_year = false
+	if year % 100 == 0
+		leap_year = false
+	end
+	if year % 4 == 0 or year % 400 == 0
+		leap_year = true
+		puts year
 	end
 	year = year + 1
 end
