@@ -21,4 +21,4 @@ number_of_mixers.times do
 end
 
 alcohol_content = (total_alcohol_vol / total_ounces) * 100
-puts (alcohol_content.to_s + "%")
+puts (alcohol_content.to_s + "% ABV")
