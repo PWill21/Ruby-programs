@@ -14,10 +14,11 @@ number_of_mixers.times do
 	puts "What is the proof or ABV, in %, of this ingredient?"
 	abv = gets.chomp.to_f
 	perct_alcohol = (abv/100).to_f
+	puts
 
 	alcohol_vol = ounces * perct_alcohol
 	total_alcohol_vol = total_alcohol_vol + alcohol_vol
 end
 
-puts total_alcohol_vol
-
+alcohol_content = (total_alcohol_vol / total_ounces) * 100
+puts (alcohol_content.to_s + "%")
